@@ -94,18 +94,17 @@ bot.addCommand(
 		let msg =
 			'```' +
 			`╭═══ LEVANTER ═══⊷
-┃❃╭──────────────
-┃❃│ Prefix : ${PREFIX}
-┃❃│ User : ${message.pushName}
-┃❃│ Time : ${date.toLocaleTimeString()}
-┃❃│ Day : ${date.toLocaleString('en', { weekday: 'long' })}
-┃❃│ Date : ${date.toLocaleDateString('hi')}
-┃❃│ Version : ${VERSION}
-┃❃│ Plugins : ${PLUGINS.count}
-┃❃│ Ram : ${getRam()}
-┃❃│ Uptime : ${getUptime('t')}
-┃❃╰───────────────
-╰═════════════════⊷
+╭────────────────
+│ Prefix : ${PREFIX}
+│ User : ${message.pushName}
+│ Time : ${date.toLocaleTimeString()}
+│ Day : ${date.toLocaleString('en', { weekday: 'long' })}
+│ Date : ${date.toLocaleDateString('hi')}
+│ Version : ${VERSION}
+│ Plugins : ${PLUGINS.count}
+│ Ram : ${getRam()}
+│ Uptime : ${getUptime('t')}
+╰────────────────
 ` +
 			'```'
 		for (const command in commands) {
